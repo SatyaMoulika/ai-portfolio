@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"noEmit":false,"declaration":true,"emitDeclarationOnly":true,"outDir":"lib","rootDir":"src/design-system"},"include":["src/design-system"],"exclude":["src/**/*.test.tsx"]}

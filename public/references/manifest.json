@@ -1,0 +1,189 @@
+[
+  {
+    "id": "gpu-photo",
+    "category": "GPU & silicon",
+    "title": "Blackwell hardware",
+    "source": "https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/",
+    "image": "references/gpu-photo.png",
+    "notice": "Metallic edges, dense circuitry and a strong central silhouette.",
+    "use": "Chip-shaped project covers; a quiet light moving along circuit paths.",
+    "credit": "NVIDIA",
+    "bytes": 71341
+  },
+  {
+    "id": "gpu-layout",
+    "category": "GPU & silicon",
+    "title": "Compute architecture",
+    "source": "https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/",
+    "image": "references/gpu-layout.webp",
+    "notice": "Repeated blocks, parallel lanes and precise divisions.",
+    "use": "A reusable grid system; sequential highlights across tiles.",
+    "credit": "NVIDIA",
+    "bytes": 338420
+  },
+  {
+    "id": "server",
+    "category": "GPU & silicon",
+    "title": "Rack-scale hardware",
+    "source": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/",
+    "image": "references/server.jpg",
+    "notice": "Vertical repetition, dark surfaces and structural rhythm.",
+    "use": "Sidebar rails and stacked panels with a restrained status pulse.",
+    "credit": "NVIDIA",
+    "bytes": 68757
+  },
+  {
+    "id": "robot",
+    "category": "Robotics",
+    "title": "Humanoid form",
+    "source": "https://www.figure.ai/news/helix-02",
+    "image": "references/robot-helix.jpg",
+    "notice": "Rounded joints, sensor-like details and silver against dark materials.",
+    "use": "A small abstract companion or a sensor-ring motif, if you want a personal character.",
+    "credit": "Figure",
+    "bytes": 247114
+  },
+  {
+    "id": "robot-detail",
+    "category": "Robotics",
+    "title": "Physical intelligence",
+    "source": "https://www.figure.ai/company",
+    "image": "references/robot-detail.webp",
+    "notice": "Contrasting soft forms and engineered articulation.",
+    "use": "Rounded corners, joint-like connectors and deliberate movement.",
+    "credit": "Figure",
+    "bytes": 267244
+  },
+  {
+    "id": "embedding-space",
+    "category": "Embeddings & vectors",
+    "title": "Embedding projector",
+    "source": "https://www.tensorflow.org/tensorboard/tensorboard_projector_plugin",
+    "image": "references/embedding-space.png",
+    "notice": "Point clouds, neighbourhoods and sparse highlighted relationships.",
+    "use": "The Atlas hero; clustered project navigation with gentle drift.",
+    "credit": "TensorFlow",
+    "bytes": 343841
+  },
+  {
+    "id": "image-neighbours",
+    "category": "Embeddings & vectors",
+    "title": "Image neighbourhoods",
+    "source": "https://www.tensorflow.org/tensorboard/tensorboard_projector_plugin",
+    "image": "references/image-neighbours.png",
+    "notice": "Visual items grouped by similarity.",
+    "use": "A text-and-image project mosaic; related cards gently cluster on hover.",
+    "credit": "TensorFlow",
+    "bytes": 303343
+  },
+  {
+    "id": "agent-flow",
+    "category": "Agents & orchestration",
+    "title": "Agent execution graph",
+    "source": "https://blog.langchain.com/unify-launches-agents-for-account-qualification-using-langgraph-and-langsmith/",
+    "image": "references/agent-flow.png",
+    "notice": "Nodes, branches and tool handoffs.",
+    "use": "Project-process sections; one signal travelling through a workflow.",
+    "credit": "LangChain / Unify",
+    "bytes": 837635
+  },
+  {
+    "id": "agent-simple",
+    "category": "Agents & orchestration",
+    "title": "Simple agent graph",
+    "source": "https://blog.langchain.com/unify-launches-agents-for-account-qualification-using-langgraph-and-langsmith/",
+    "image": "references/agent-simple.png",
+    "notice": "A small, clear flow with distinct responsibilities.",
+    "use": "Compact progress states and reusable connected-step components.",
+    "credit": "LangChain / Unify",
+    "bytes": 859593
+  },
+  {
+    "id": "network",
+    "category": "Networks & layers",
+    "title": "Encoder\u2013decoder stack",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/network.png",
+    "notice": "Layers grouped into repeated modules.",
+    "use": "Stacked sections or cards; a slow layer-by-layer reveal.",
+    "credit": "Jay Alammar",
+    "bytes": 127812
+  },
+  {
+    "id": "feed-forward",
+    "category": "Networks & layers",
+    "title": "Encoder and feed-forward block",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/feed-forward.png",
+    "notice": "A distinct attention stage followed by a feed-forward stage.",
+    "use": "Two-stage project storytelling: context, then transformation.",
+    "credit": "Jay Alammar",
+    "bytes": 32628
+  },
+  {
+    "id": "token-embedding",
+    "category": "Tokens & tensors",
+    "title": "Tokens become embeddings",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/token-embedding.png",
+    "notice": "Discrete language units mapped into structured numeric representations.",
+    "use": "Token-like labels that resolve into a restrained vector pattern.",
+    "credit": "Jay Alammar",
+    "bytes": 13335
+  },
+  {
+    "id": "tensors",
+    "category": "Tokens & tensors",
+    "title": "Layered tensor flow",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/tensors.png",
+    "notice": "A sequence of tokens passing through layered operations.",
+    "use": "Repeating columns and vertical lanes for process diagrams.",
+    "credit": "Jay Alammar",
+    "bytes": 57027
+  },
+  {
+    "id": "self-attention",
+    "category": "Attention & matrices",
+    "title": "Self-attention links",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/self-attention.png",
+    "notice": "Different connection strengths between words.",
+    "use": "On hover, illuminate only the related labels or project nodes.",
+    "credit": "Jay Alammar",
+    "bytes": 50075
+  },
+  {
+    "id": "qkv",
+    "category": "Attention & matrices",
+    "title": "Query, key and value vectors",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/qkv.png",
+    "notice": "Three parallel representations feeding a common operation.",
+    "use": "Three-column feature groups that converge into one output.",
+    "credit": "Jay Alammar",
+    "bytes": 38480
+  },
+  {
+    "id": "matrix",
+    "category": "Attention & matrices",
+    "title": "Attention matrix calculation",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/matrix.png",
+    "notice": "Rows, columns and structured relationships.",
+    "use": "A matrix-tile texture with one row and column highlighting at a time.",
+    "credit": "Jay Alammar",
+    "bytes": 28115
+  },
+  {
+    "id": "heads",
+    "category": "Attention & matrices",
+    "title": "Multi-head attention",
+    "source": "https://jalammar.github.io/illustrated-transformer/",
+    "image": "references/heads.png",
+    "notice": "Parallel attention paths with a shared destination.",
+    "use": "A restrained set of animated strands in a project cover.",
+    "credit": "Jay Alammar",
+    "bytes": 56246
+  }
+]

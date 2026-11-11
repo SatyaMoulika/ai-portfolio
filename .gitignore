@@ -1,0 +1,9 @@
+node_modules/
+dist/
+lib/
+work/
+*.tgz
+push-source.py
+
+# Keep the downloadable component archive included in the demo.
+!public/downloads/*.tgz
