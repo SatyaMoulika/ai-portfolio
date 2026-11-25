@@ -66,15 +66,15 @@ export function App(){
           <PortfolioGuideAvatar/>
         </section>
 
-        <Section id="work" eyebrow="01 / Selected work" title={<>Ideas into <span className="font-editorial font-medium italic text-azure">working systems.</span>}>
+        <Section id="work" eyebrow="01 / Selected work" title={<>Ideas into <span className="font-editorial font-medium italic text-azure">working systems.</span></>}>
           <p className="mb-6 max-w-2xl text-xs leading-relaxed text-muted">A selection across LLM applications, fine-tuning, document retrieval, computer vision, and agent workflows.</p><div className="grid gap-5 md:grid-cols-2">{projects.map(project=><ProjectCard key={project.number} project={project}/>)}</div>
         </Section>
 
-        <Section id="about" eyebrow="02 / About" title={<>Curiosity at the core. <span className="font-editorial font-medium italic text-azure">People in the picture.</span>}>
+        <Section id="about" eyebrow="02 / About" title={<>Curiosity at the core. <span className="font-editorial font-medium italic text-azure">People in the picture.</span></>}>
           <div className="grid gap-6 md:grid-cols-[.8fr_1.2fr] md:items-start"><Card className="p-5"><Eyebrow>How I approach AI</Eyebrow><p className="mt-3 text-sm font-bold leading-6">From a promising demo to a dependable workflow.</p><p className="mt-2 text-xs leading-6 text-muted">I care about making systems understandable, useful, and grounded in the data they rely on.</p></Card><div><p className="max-w-2xl text-sm leading-7 text-muted">My work spans experimentation and product engineering: adapting language models, building document-grounded assistants, and shaping the interfaces people use to work with AI.</p><p className="mt-3 max-w-2xl text-sm leading-7 text-muted">I’m continuing to grow as an AI engineer through hands-on projects, careful evaluation, and collaboration.</p></div></div>
         </Section>
 
-        <Section id="resume" eyebrow="03 / Experience & education" title={<>A path shaped by <span className="font-editorial font-medium italic text-azure">building and learning.</span>}>
+        <Section id="resume" eyebrow="03 / Experience & education" title={<>A path shaped by <span className="font-editorial font-medium italic text-azure">building and learning.</span></>}>
           <div className="resume-grid"><Card className="p-5 sm:p-6"><p className="resume-section-label">Experience</p><ResumeItem title="AI Engineer" organization="Quantum AI Global" meta="Hyderabad, Telangana, India · Dates to confirm"/><p className="resume-section-label mt-7">Leadership & volunteering</p><ResumeItem title="Student Secretary" organization="National Service Scheme" meta="Mar 2024 – Mar 2025"/><ResumeItem title="Student Volunteer" organization="National Service Scheme" meta="Nov 2022 – Mar 2024"/></Card><Card className="p-5 sm:p-6"><p className="resume-section-label">Education</p><ResumeItem title="Bachelor of Technology" organization="Gayatri Vidya Parishad College of Engineering (Autonomous)" meta="2021 – 2025 · 9.43 / 10"/><div className="mt-6 rounded-lg bg-soft p-4"><p className="text-xs font-bold">Resume PDF</p><p className="mt-1 text-xs leading-5 text-muted">Add a downloadable resume when the latest file is available.</p></div></Card></div>
         </Section>
 
