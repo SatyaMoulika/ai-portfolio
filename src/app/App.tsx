@@ -1,5 +1,5 @@
-import type {ReactNode} from 'react';
-import {Badge,ButtonLink,Card,Eyebrow,MotionToggle,Navbar,Section,ThemeProvider} from '../design-system';
+import {useState,type ReactNode} from 'react';
+import {Badge,ButtonLink,Card,Eyebrow,MotionToggle,Navbar,Section,ThemeProvider,useMotion} from '../design-system';
 import './portfolio.css';
 
 type Project={
@@ -40,6 +40,7 @@ const projects:Project[]=[
   {number:'05',category:'LLM applications · Chat',title:'OpenAI conversational assistant',description:'A lightweight chat application built with LangChain, OpenAI, and Streamlit, with conversation history and environment-based API key configuration.',tags:['Python','LangChain','OpenAI','Streamlit'],tone:'azure',href:'https://github.com/SatyaMoulika/OpenAI-Chatbot',preview:<ChatPreview/>},
 ];
 
+function PortfolioGuideAvatar(){const[messageOpen,setMessageOpen]=useState(false);const{paused,reduced}=useMotion();return <div className="hero-avatar"><button type="button" className="portfolio-guide-avatar" data-motion={paused||reduced?'paused':'running'} aria-expanded={messageOpen} aria-controls="portfolio-guide-message" aria-label={messageOpen?'Close portfolio guide':'Open portfolio guide'} onClick={()=>setMessageOpen(open=>!open)}><span className="avatar-guide-stage"><img className="avatar-guide-art" src="/portfolio/avatar-guide.svg" alt=""/>{!reduced&&<svg className="avatar-guide-blink" viewBox="0 0 1200 896" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="avatar-skin-left" x1="0" y1="323" x2="0" y2="405" gradientUnits="userSpaceOnUse"><stop stopColor="#FAC39A"/><stop offset="1" stopColor="#F5B58F"/></linearGradient><linearGradient id="avatar-skin-right" x1="0" y1="323" x2="0" y2="405" gradientUnits="userSpaceOnUse"><stop stopColor="#FAC39A"/><stop offset="1" stopColor="#F5B58F"/></linearGradient></defs><path fill="url(#avatar-skin-left)" d="M470 365 C483 342 506 326 532 324 C555 323 578 342 591 366 C579 389 557 403 532 402 C507 401 484 385 470 365Z"/><path fill="url(#avatar-skin-right)" d="M612 365 C625 342 648 326 674 324 C697 323 720 342 733 366 C721 389 699 403 674 402 C649 401 626 385 612 365Z"/><path d="M478 370 C505 390 558 390 584 369" fill="none" stroke="#603728" strokeWidth="7" strokeLinecap="round"/><path d="M620 370 C647 390 700 390 726 369" fill="none" stroke="#603728" strokeWidth="7" strokeLinecap="round"/></svg>}</span></button><p id="portfolio-guide-message" className="avatar-guide-message" hidden={!messageOpen} aria-live="polite">Hi, I’m Moulika. Welcome to my portfolio—have a look around!</p><span className="avatar-guide-hint" aria-hidden="true">Click or tap to say hello</span></div>}
 function ProjectCard({project}:{project:Project}){
   return <Card className="portfolio-project group overflow-hidden transition hover:-translate-y-1 hover:shadow-lg hover:shadow-ink/5">
     <div className={`portfolio-project-art tone-${project.tone}`} role={project.image?'img':'presentation'} aria-label={project.image?project.imageAlt:undefined}>
@@ -62,7 +63,7 @@ export function App(){
         <Navbar brand={<>Satya Moulika Pulla<span className="text-azure"> ✧</span></>} items={[{label:'Work',href:'#work'},{label:'About',href:'#about'},{label:'Resume',href:'#resume'}]} actions={<MotionToggle/>}/>
         <section className="portfolio-hero grid items-center gap-8 border-t border-line px-6 py-10 sm:px-10 md:grid-cols-[1.08fr_.92fr] md:gap-12 md:px-14 md:py-14">
           <div><Eyebrow>AI Engineer · LLMs · Applied ML</Eyebrow><h1 className="my-5 text-5xl font-extrabold leading-[1.04] tracking-[-.06em] sm:text-6xl">Turning ideas<br/>into <span className="font-editorial font-medium italic text-azure">useful AI.</span></h1><p className="max-w-lg text-sm leading-7 text-muted">I build AI applications, retrieval systems, and model workflows that connect research ideas to practical experiences.</p><div className="mt-6 flex flex-wrap gap-3"><ButtonLink href="#work">Explore my work ↗</ButtonLink><ButtonLink variant="secondary" href="#resume">Experience & education</ButtonLink></div><div className="mt-6 flex flex-wrap gap-2"><Badge>LLM applications</Badge><Badge tone="teal">Applied ML</Badge><Badge tone="violet">AI workflows</Badge></div></div>
-          <div className="hero-avatar"><img src="/portfolio/avatar.svg" alt="Stylized professional avatar illustration for Satya Moulika Pulla"/></div>
+          <PortfolioGuideAvatar/>
         </section>
 
         <Section id="work" eyebrow="01 / Selected work" title={<>Ideas into <span className="font-editorial font-medium italic text-azure">working systems.</span>}>
