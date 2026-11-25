@@ -1,0 +1,12 @@
+.avatar-guide-button{display:block;width:100%;max-width:32rem;padding:0;border:0;border-radius:1rem;background:#fff;cursor:pointer}
+.avatar-guide-button:focus-visible{outline:3px solid var(--pa-azure);outline-offset:4px}
+.avatar-guide-stage{position:relative;display:block;width:100%;aspect-ratio:1200/896;animation:avatar-guide-float 5.2s ease-in-out infinite}
+.avatar-guide-art{display:block;width:100%;height:100%;object-fit:contain}
+.avatar-guide-blink{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;animation:avatar-guide-blink 5.2s linear infinite}
+.avatar-guide-button[data-motion=paused] .avatar-guide-stage{animation:none}
+.avatar-guide-button[data-motion=paused] .avatar-guide-blink{display:none;animation:none}
+.avatar-guide-message{max-width:32rem;margin:0;padding:.7rem 1rem;border:1px solid var(--pa-line);border-radius:.85rem;background:#fffaf6;color:var(--pa-ink);font-size:.8rem;line-height:1.5;text-align:center;box-shadow:0 6px 18px #2434470d}
+.avatar-guide-message[hidden]{display:none}
+@keyframes avatar-guide-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes avatar-guide-blink{0%,91%,94%,100%{opacity:0}92%,93%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.avatar-guide-stage,.avatar-guide-blink{animation:none!important}.avatar-guide-stage{transform:none!important}.avatar-guide-blink{display:none}}
